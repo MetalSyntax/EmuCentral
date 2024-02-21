@@ -1,0 +1,142 @@
+[
+  {
+    "name": "My Boy! - GBA Emulator",
+    "developer": "Fast Emulator",
+    "logo_url": "https://play-lh.googleusercontent.com/1AXfmjTLiuos_CAk4GmV6DPK_evGQGcK45OEw2WDmnweKS6ZGp9gRnjs8htC_4Lq5mco=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=com.fastemulator.gba",
+    "type": "Premium"
+  },
+  {
+    "name": "PPSSPP - PSP emulator",
+    "developer": "Henrik Rydgård",
+    "logo_url": "https://play-lh.googleusercontent.com/9W88RU_0oI8gFEUGPKm__gI9Jz7ZJhjv9yrAtzxaehXaYCk7G8TcumfNKJlySuk7yGY=w240-h480-rw",
+    "url": "https://www.ppsspp.org/download/",
+    "type": "Free"
+  },
+  {
+    "name": "PPSSPP Gold - PSP emulator",
+    "developer": "Henrik Rydgård",
+    "logo_url": "https://play-lh.googleusercontent.com/4RHgZlekSl4nOyNZ-VibI0q6dqhlqYijox4bdlYhWRh1FeFe8OGjkl-RqrUBdY3www=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold",
+    "type": "Premium"
+  },
+  {
+    "name": "AetherSX2",
+    "developer": "AetherSX2 Developers",
+    "logo_url": "https://play-lh.googleusercontent.com/5AgZpV0i8kaV6-RklMBR12a7d9aEwGUJQcOzog7jaiW8_uc_WUC1mtndYGXlSfg1tS4=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=xyz.aethersx2.android",
+    "type": "Free"
+  },
+  {
+    "name": "NetherSX2",
+    "developer": "Trixarian | EZonTheEyes",
+    "logo_url": "https://github.com/Trixarian/NetherSX2-classic/raw/main/.github/assets/logo_light.png#gh-dark-mode-only",
+    "url": "https://github.com/Trixarian/NetherSX2-patch/releases",
+    "type": "Free"
+  },
+  {
+    "name": "DuckStation",
+    "developer": "Stenzek",
+    "logo_url": "https://play-lh.googleusercontent.com/0lQAIz9NFGArLCmXVfyLXwJlBuUPPMKg_rTdcrvtlTM17LLSuujzYfBy7Q9qUi7tiQ=w240-h480-rw",
+    "url": "https://www.duckstation.org/android/",
+    "type": "Free"
+  },
+  {
+    "name": "Lemuroid",
+    "developer": "Filippo Scognamiglio",
+    "logo_url": "https://play-lh.googleusercontent.com/2qI4_dJX2OAp1cJi0puGbVCjQfYseEU7iHUi3HxPpF5vT8aErQ6Z6fPn_4SG-FWEwvk=w240-h480-rw",
+    "url": "https://github.com/Swordfish90/Lemuroid/releases",
+    "type": "Free"
+  },
+  {
+    "name": "Dolphin Emulator",
+    "developer": "Dolphin Emulator Developers",
+    "logo_url": "https://play-lh.googleusercontent.com/r-P25YLcZwm5h88BQQc28ihFHHGSCRpoTeoIkPuSK0nDC2c48-6teaLAMBe7wuLiYg=w240-h480-rw",
+    "url": "https://dolphin-emu.org/download/",
+    "type": "Free"
+  },
+  {
+    "name": "yuzu Emulator",
+    "developer": "Team yuzu | citra",
+    "logo_url": "https://play-lh.googleusercontent.com/WM_D2_fBnPHBm7vhWslx4VB2WohgorfKEJpO19sFIC_l7eMnBWSZRK-sCb-S1LkWKjk=w240-h480-rw",
+    "url": "https://github.com/yuzu-emu/yuzu-android/releases",
+    "type": "Free"
+  },
+  {
+    "name": "Citra Emulator - Canary",
+    "developer": "Team yuzu | citra",
+    "logo_url": "https://play-lh.googleusercontent.com/VQt_z3nSGf3ZZRuYnDpSHfWws7Qa61-qNQpsgnrbhSox7icoAhYV5M2dkRoUtGHpqA=w240-h480-rw",
+    "url": "https://github.com/citra-emu/citra-canary/releases/",
+    "type": "Free"
+  },
+  {
+    "name": "Citra Emulator - Nightly",
+    "developer": "Team yuzu | citra",
+    "logo_url": "https://play-lh.googleusercontent.com/VQt_z3nSGf3ZZRuYnDpSHfWws7Qa61-qNQpsgnrbhSox7icoAhYV5M2dkRoUtGHpqA=w240-h480-rw",
+    "url": "https://github.com/citra-emu/citra-nightly/releases",
+    "type": "Free"
+  },
+  {
+    "name": "Citra Emulator - MMJ",
+    "developer": "Team yuzu | citra",
+    "logo_url": "https://play-lh.googleusercontent.com/VQt_z3nSGf3ZZRuYnDpSHfWws7Qa61-qNQpsgnrbhSox7icoAhYV5M2dkRoUtGHpqA=w240-h480-rw",
+    "url": "https://github.com/weihuoya/citra/releases",
+    "type": "Free"
+  },
+  {
+    "name": "DraStic DS Emulator",
+    "developer": "Exophase",
+    "logo_url": "https://play-lh.googleusercontent.com/fyOy1bFOen89oWzXImJYNJYce1des9y_jYohNt_WOVFpQbJ7ReSL7hCea2xPTVyf7gd9=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=com.dsemu.drastic",
+    "type": "Premium"
+  },
+  {
+    "name": "Redream",
+    "developer": "Recompiled LLC",
+    "logo_url": "https://play-lh.googleusercontent.com/onv1SYImQr0PWKFtq26N5ufe3n-Ymks7sWPTrpEvdVMY5CYZ6Qrhb0vSZpO9MGEfgnQ=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=io.recompiled.redream",
+    "type": "Free"
+  },
+  {
+    "name": "RetroArch",
+    "developer": "Libretro",
+    "logo_url": "https://play-lh.googleusercontent.com/bWf-MxH7kV88rrx27MgFB24V8gHd1C3s1ojYq4viPFtMOdtMy60PKVAkh69LLns6c4s=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=com.retroarch",
+    "type": "Free"
+  },
+  {
+    "name": "ePSXe for Android",
+    "developer": "epsxe software s.l.",
+    "logo_url": "https://play-lh.googleusercontent.com/xm13cRUNfN917GRFZql6MrtL9gDYvvoj1kINpZyFNadRAGbDmrK8gB5V-PvuhtvBmA=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=com.epsxe.ePSXe",
+    "type": "Premium"
+  },
+  {
+    "name": "M64Plus FZ Emulator",
+    "developer": "Francisco Zurita",
+    "logo_url": "https://play-lh.googleusercontent.com/c4jB-gRw9Ck97cU7bANWuvpiqjlxScoEGBn7GWYkT1m7N2ZAxmh9fLBn69S9knFz1OI=w240-h480-rw",
+    "url": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita",
+    "type": "Free"
+  },
+  {
+    "name": "melonDS",
+    "developer": "Rafael V. Caetano",
+    "logo_url": "https://play-lh.googleusercontent.com/Yz9CtalMmQyDCNO6eEq02c5YcQ_okZ_mwpC0lHAWX7E9iBk9vjwGyXCwmp7uwnbmdg=w240-h480-rw",
+    "url": "https://github.com/rafaelvcaetano/melonDS-android/releases",
+    "type": "Free"
+  },
+  {
+    "name": "EKA2L1",
+    "developer": "Play Software",
+    "logo_url": "https://play-lh.googleusercontent.com/6o3-aR6LTCaObqsC2JqObAfkXTqCz8tql2ji7lggAJBsrKYScgp6cT-3IdopVYl6sJE=w240-h480-rw",
+    "url": "https://github.com/EKA2L1/EKA2L1/releases",
+    "type": "Free"
+  },
+  {
+    "name": "J2ME Loader",
+    "developer": "Play Software",
+    "logo_url": "https://play-lh.googleusercontent.com/aVK3_KQIdJAkymBPPOu8XYB_Sqa_DUSWlLusa9MybmcaQceSY43ZkKTFseQ4F4E1abw=w240-h480-rw",
+    "url": "https://github.com/nikita36078/J2ME-Loader/releases",
+    "type": "Free"
+  }
+]
