@@ -72,8 +72,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*margin-bottom: 50px;*/
-    height: calc(100vh - 150px);
+    margin-bottom: 50px;
+    height: calc(100vh - 180px);
     overflow-y: scroll;
   }
   
