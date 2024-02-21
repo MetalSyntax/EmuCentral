@@ -112,6 +112,13 @@
     font-size: 0.8em;
     color: #666;
   }
+
+  .emulator-version {
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+    font-size: 0.8em;
+    color: #666;
+  }
   
   .emulator-status {
     font-family: 'Roboto', sans-serif;
