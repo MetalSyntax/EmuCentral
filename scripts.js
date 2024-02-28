@@ -21,7 +21,7 @@ async function fetchEmulators() {
             <p class="emulator-developer">${emulator.developer}</p>
         </div>
         <div class="emulator-button">
-            <a href="${emulator.url.includes('https://github.com/') && downloadLink ? downloadLink : emulator.url}" target="_blank" class="install-button filled">Download</a>
+            <a href="${emulator.url.includes('https://github.com/') && downloadLink ? downloadLink : emulator.url}" target="_blank" class="install-button filled"><i class="fa-solid fa-download"></i> Download</a>
         </div>`;
         emulatorsContainer.appendChild(emulatorItem);
     }
@@ -57,3 +57,34 @@ const getApkLastRelease = async (user, repo) => {
         console.error('Error al obtener la información:', error);
     }
 };
+
+/**
+ * The above JavaScript function toggles a dark mode theme on specific elements of a webpage based on
+ * user preference stored in local storage.
+ */
+const toggleModeButton = document.getElementById('toggle-mode');
+const sunIcon = document.querySelector('.fa-sun');
+const moonIcon = document.querySelector('.fa-moon');
+function toggleDarkMode() {
+  const elementsToToggle = [
+    document.body,
+    document.querySelector('.header'),
+    document.querySelector('.copyright'),
+  ];
+  elementsToToggle.forEach(element => {
+    element.classList.toggle('dark-mode');
+  });
+  localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+  sunIcon.classList.toggle('hidden', document.body.classList.contains('dark-mode'));
+  moonIcon.classList.toggle('hidden', !document.body.classList.contains('dark-mode'));
+}
+toggleModeButton.addEventListener('click', toggleDarkMode);
+/* The code block you provided is checking the value stored in the local storage under the key
+'dark-mode'. If the value is 'true', it means that the user has preferred dark mode. */
+const isDarkModePreferred = localStorage.getItem('dark-mode') === 'true';
+if (isDarkModePreferred) {
+    toggleDarkMode();
+    sunIcon.classList.toggle('hidden', isDarkModePreferred);
+} else {
+    moonIcon.classList.toggle('hidden', !isDarkModePreferred);
+}

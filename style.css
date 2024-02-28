@@ -1,5 +1,7 @@
   body {
     overflow-y: hidden;
+    background-color: #ddd;
+    margin: 0px;
   }
   /*Header*/
   .header {
@@ -7,8 +9,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
   }
   .header-logo {
     display: flex;
@@ -17,13 +20,15 @@
     text-decoration: none;
   }
 
-  .header-logo h1 {
+  .header-logo .title {
     font-family:  'Roboto', sans-serif;
     color: #333;
+    font-size: 20px;
+    margin-left: 10px;
   }
 
   .header-logo img {
-    width: 100px;
+    width: 50px;
   }
 
   .header-nav {
@@ -54,6 +59,14 @@
     border: 1px solid #ddd;
     border-radius: 5px;
   }
+
+  #toggle-mode {
+    font-size: 24px;
+    border: 0px solid #ddd;
+    cursor: pointer;
+    background-color: transparent;
+    color: #222;
+  }
   
   @media (max-width: 600px) {
     .header-nav, .header-search {
@@ -73,7 +86,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 150px);
     overflow-y: scroll;
   }
   
@@ -86,11 +99,12 @@
     overflow: hidden;
     position: relative;
     justify-content: space-between;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 5px;
   }
   
   .emulator-icon {
-    width: 100px;
+    width: 80px;
     height: auto;
     border-radius: 20px;
     border: 1px solid transparent;
@@ -104,58 +118,74 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-size: 1.2em;
+    color: #222;
   }
   
   .emulator-developer {
     font-family: 'Roboto', sans-serif;
     margin: 5px 0;
     font-size: 0.8em;
-    color: #666;
+    color: #333;
   }
 
   .emulator-version {
     font-family: 'Roboto', sans-serif;
     margin: 5px 0;
     font-size: 0.8em;
-    color: #666;
+    color: #333;
   }
   
   .emulator-status {
     font-family: 'Roboto', sans-serif;
   }
+
   /*Buttons*/
   .install-button {
     padding: 10px 20px;
     border: none;
-    border-radius: 50px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 12px;
     cursor: pointer;
     margin: 10px;
+    display: flex;
   }
   
   .install-button.filled {
     font-family:  'Roboto', sans-serif;
     text-decoration: none;
-    background-color: #10b8a2;
-    color: white;
+    background-color: #222;
+    color: #fff;
   }
   
   .install-button.filled:hover {
-    background-color: #0595bf;
+    background-color: #222;
   }
   
   .install-button.empty {
     font-family:  'Roboto', sans-serif;
     text-decoration: none;
     background-color: transparent;
-    border: 2px solid #10b8a2;
-    color: #10b8a2;
+    border: 2px solid #222;
+    color: #ddd;
   }
   
   .install-button.empty:hover {
-    background-color: #0595bf;
-    color: white;
+    background-color: #222;
+    color: #ddd;
   }
+
+  /*icons*/
+  .fa-download {
+    margin-right: 5px;
+  }
+  .fa-sun.hidden{
+    display: none;
+  }
+
+  .fa-moon.hidden{
+    display: none;
+  }
+
   /* Copyright */
   .copyright {
     position: fixed;
@@ -166,4 +196,37 @@
   }
   .copyright-text {
     font-family:  'Roboto', sans-serif;
+    color: #222;
+  }
+
+  .fa-github  {
+    color: #222;
+  }
+
+  /*Dark Mode*/
+  body.dark-mode {
+    background-color: #333;
+  }
+  .dark-mode .copyright,
+  .dark-mode .emulator-item,
+  .dark-mode .header {
+    background-color: #222;
+  }
+  .dark-mode .emulator-title,
+  .dark-mode .emulator-version,
+  .dark-mode .emulator-developer,
+  .dark-mode .header-logo h1,
+  .dark-mode .copyright-text,
+  .dark-mode .copyright-text .fa-github,
+  .dark-mode #toggle-mode {
+    color: #ddd;
+  }
+
+  .dark-mode .install-button.filled {
+    background-color: #ddd;
+    color: #222;
+  }
+  .dark-mode .install-button.filled:hover {
+    background-color: #ccc;
+    color: #333;
   }
