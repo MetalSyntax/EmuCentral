@@ -10,21 +10,61 @@ async function fetchEmulators() {
     data.sort((a, b) => a.name.localeCompare(b.name));
     for (const emulator of data) {
         const emulatorItem = document.createElement('div');
-        const downloadLink = await getApkLastRelease(emulator.user, emulator.repo);
         emulatorItem.classList.add('emulator-item');
-        emulatorItem.innerHTML = `
-        <div class="emulator-image">
-            <img class="emulator-icon" src="${emulator.logo_url}"/>
-        </div>
-        <div class="emulator-info">
-            <h2 class="emulator-title">${emulator.name}</h2>
-            <p class="emulator-developer">${emulator.developer}</p>
-        </div>
-        <div class="emulator-button">
-            <a href="${emulator.url.includes('https://github.com/') && downloadLink ? downloadLink : emulator.url}" target="_blank" class="install-button filled"><i class="fa-solid fa-download"></i> Download</a>
-        </div>`;
+
+        const emulatorImg = document.createElement('div');
+        emulatorImg.classList.add('emulator-image');
+
+        const emulatorIcon = document.createElement('img');
+        emulatorIcon.classList.add('emulator-icon');
+        emulatorIcon.setAttribute('src', emulator.logo_url);
+
+        emulatorImg.appendChild(emulatorIcon);
+
+        const emulatorInfo = document.createElement('div');
+        emulatorInfo.classList.add('emulator-info');
+
+        const emulatorTitle = document.createElement('h2');
+        emulatorTitle.classList.add('emulator-title');
+        emulatorTitle.textContent = emulator.name;
+
+        const emulatorDeveloper = document.createElement('p');
+        emulatorDeveloper.classList.add('emulator-developer');
+        emulatorDeveloper.textContent = emulator.developer;
+
+        emulatorInfo.appendChild(emulatorTitle);
+        emulatorInfo.appendChild(emulatorDeveloper);
+
+        const downloadLink = await getApkLastRelease(emulator.user, emulator.repo);
+
+        const downloadButton = document.createElement('a');
+        downloadButton.classList.add('install-button', 'filled');
+        downloadButton.target = emulator.url.includes('https://github.com/') && downloadLink ? '_self' : '_blank';
+        downloadButton.href = emulator.url.includes('https://github.com/') && downloadLink ? downloadLink : emulator.url
+
+        const downloadIcon = document.createElement('i');
+        downloadIcon.classList.add('fa-solid', 'fa-download');
+        downloadButton.appendChild(downloadIcon);
+
+        const downloadText = document.createTextNode(' Download');
+        downloadButton.appendChild(downloadText);
+
+        const progressBar = document.createElement('div');
+        progressBar.classList.add('download-progress');
+
+        downloadButton.addEventListener('click', async () => {
+            if (!downloadLink) {
+                return;
+            }
+            downloadButton.classList.add('downloading');
+            downloadButton.textContent = 'Downloading...';
+        });
+        emulatorItem.appendChild(emulatorImg);
+        emulatorItem.appendChild(emulatorInfo);
+        emulatorItem.appendChild(downloadButton);
         emulatorsContainer.appendChild(emulatorItem);
-    }
+        emulatorItem.appendChild(progressBar); 
+        }
     } catch (error) {
         console.error(error);
     }
@@ -79,6 +119,7 @@ function toggleDarkMode() {
   moonIcon.classList.toggle('hidden', !document.body.classList.contains('dark-mode'));
 }
 toggleModeButton.addEventListener('click', toggleDarkMode);
+
 /* The code block you provided is checking the value stored in the local storage under the key
 'dark-mode'. If the value is 'true', it means that the user has preferred dark mode. */
 const isDarkModePreferred = localStorage.getItem('dark-mode') === 'true';

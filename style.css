@@ -6,11 +6,9 @@
   /*Header*/
   .header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin-bottom: 10px;
     background-color: #fff;
   }
   .header-logo {
@@ -86,16 +84,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 131px);
     overflow-y: scroll;
+    margin-top: 1px;
+    flex-direction: row;
+    width: 100%;
   }
   
   .emulator-item {
     display: flex;
     align-items: center;
     width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
     overflow: hidden;
     position: relative;
     justify-content: space-between;
@@ -117,7 +116,7 @@
   .emulator-title {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #222;
   }
   
@@ -141,7 +140,7 @@
 
   /*Buttons*/
   .install-button {
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
     font-size: 12px;
