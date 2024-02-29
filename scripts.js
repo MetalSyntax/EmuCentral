@@ -39,8 +39,9 @@ async function fetchEmulators() {
 
         const downloadButton = document.createElement('a');
         downloadButton.classList.add('install-button', 'filled');
-        downloadButton.target = emulator.url.includes('https://github.com/') && downloadLink ? '_self' : '_blank';
-        downloadButton.href = emulator.url.includes('https://github.com/') && downloadLink ? downloadLink : emulator.url
+        downloadButton.target = '_blank';
+        downloadButton.setAttribute('download', 'download');
+        downloadButton.href = emulator.url.includes('https://github.com/') && downloadLink ? downloadLink : emulator.url;
 
         const downloadIcon = document.createElement('i');
         downloadIcon.classList.add('fa-solid', 'fa-download');
@@ -49,21 +50,21 @@ async function fetchEmulators() {
         const downloadText = document.createTextNode(' Download');
         downloadButton.appendChild(downloadText);
 
-        const progressBar = document.createElement('div');
-        progressBar.classList.add('download-progress');
-
         downloadButton.addEventListener('click', async () => {
             if (!downloadLink) {
                 return;
             }
             downloadButton.classList.add('downloading');
             downloadButton.textContent = 'Downloading...';
+            setTimeout (() => {
+                downloadButton.classList.remove('downloading');
+                downloadButton.textContent = 'Downloaded';
+            }, 1000);
         });
         emulatorItem.appendChild(emulatorImg);
         emulatorItem.appendChild(emulatorInfo);
         emulatorItem.appendChild(downloadButton);
         emulatorsContainer.appendChild(emulatorItem);
-        emulatorItem.appendChild(progressBar); 
         }
     } catch (error) {
         console.error(error);
