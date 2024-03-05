@@ -55,33 +55,6 @@
     "type": "Free"
   },
   {
-    "name": "yuzu - Switch Emulator",
-    "developer": "Team yuzu | citra",
-    "logo_url": "https://play-lh.googleusercontent.com/WM_D2_fBnPHBm7vhWslx4VB2WohgorfKEJpO19sFIC_l7eMnBWSZRK-sCb-S1LkWKjk=w240-h480-rw",
-    "url": "https://github.com/yuzu-emu/yuzu-android/releases",
-    "user":"yuzu-emu",
-    "repo":"yuzu-android",
-    "type": "Free"
-  },
-  {
-    "name": "Citra Emulator - Canary",
-    "developer": "Team yuzu | citra",
-    "logo_url": "https://play-lh.googleusercontent.com/VQt_z3nSGf3ZZRuYnDpSHfWws7Qa61-qNQpsgnrbhSox7icoAhYV5M2dkRoUtGHpqA=w240-h480-rw",
-    "url": "https://github.com/citra-emu/citra-canary/releases/",
-    "user":"citra-emu",
-    "repo":"citra-canary",
-    "type": "Free"
-  },
-  {
-    "name": "Citra Emulator - Nightly",
-    "developer": "Team yuzu | citra",
-    "logo_url": "https://play-lh.googleusercontent.com/VQt_z3nSGf3ZZRuYnDpSHfWws7Qa61-qNQpsgnrbhSox7icoAhYV5M2dkRoUtGHpqA=w240-h480-rw",
-    "url": "https://github.com/citra-emu/citra-nightly/releases",
-    "user":"citra-emu",
-    "repo":"citra-nightly",
-    "type": "Free"
-  },
-  {
     "name": "Citra Emulator - MMJ",
     "developer": "Team yuzu | citra",
     "logo_url": "https://play-lh.googleusercontent.com/VQt_z3nSGf3ZZRuYnDpSHfWws7Qa61-qNQpsgnrbhSox7icoAhYV5M2dkRoUtGHpqA=w240-h480-rw",
