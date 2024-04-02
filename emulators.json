@@ -25,13 +25,6 @@
     "type": "Free"
   },
   {
-    "name": "AetherSX2 - PS2 Emulator",
-    "developer": "AetherSX2 Developers",
-    "logo_url": "https://play-lh.googleusercontent.com/5AgZpV0i8kaV6-RklMBR12a7d9aEwGUJQcOzog7jaiW8_uc_WUC1mtndYGXlSfg1tS4=w240-h480-rw",
-    "url": "https://www.aethersx2.com/archive/android/alpha/15210-v1.5-4248.apk",
-    "type": "Free"
-  },
-  {
     "name": "DuckStation - PSX Emulator",
     "developer": "Stenzek",
     "logo_url": "https://play-lh.googleusercontent.com/0lQAIz9NFGArLCmXVfyLXwJlBuUPPMKg_rTdcrvtlTM17LLSuujzYfBy7Q9qUi7tiQ=w240-h480-rw",
@@ -52,6 +45,42 @@
     "developer": "Dolphin Emulator Developers",
     "logo_url": "https://play-lh.googleusercontent.com/r-P25YLcZwm5h88BQQc28ihFHHGSCRpoTeoIkPuSK0nDC2c48-6teaLAMBe7wuLiYg=w240-h480-rw",
     "url": "https://dolphin-emu.org/download/",
+    "type": "Free"
+  },
+  {
+    "name": "Lemonade - Nintendo 3DS",
+    "developer": "Lemonade-emu",
+    "logo_url": "https://avatars.githubusercontent.com/u/164559294?s=200&v=4",
+    "url": "https://github.com/Lemonade-emu/Lemonade/releases",
+    "user":"Lemonade-emu",
+    "repo":"Lemonade",
+    "type": "Free"
+  },
+  {
+    "name": "Lime3DS - Nintendo 3DS",
+    "developer": "Lime3DS",
+    "logo_url": "https://avatars.githubusercontent.com/u/165328530?s=200&v=4",
+    "url": "https://github.com/Lime3DS/Lime3DS/releases",
+    "user":"Lime3DS",
+    "repo":"Lime3DS",
+    "type": "Free"
+  },
+  {
+    "name": "Suyu - Nintendo Switch",
+    "developer": "suyu-emu",
+    "logo_url": "https://avatars.githubusercontent.com/u/162462595?s=200&v=4",
+    "url": "https://github.com/suyu-emu/suyu/releases",
+    "user":"suyu-emu",
+    "repo":"suyu",
+    "type": "Free"
+  },
+  {
+    "name": "Sudachi - Nintendo Switch",
+    "developer": "sudachi-emu",
+    "logo_url": "https://avatars.githubusercontent.com/u/122718334?s=200&v=4",
+    "url": "https://github.com/sudachi-emu/sudachi/releases/",
+    "user":"sudachi-emu",
+    "repo":"sudachi",
     "type": "Free"
   },
   {
