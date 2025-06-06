@@ -84,7 +84,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
-    height: calc(100vh - 131px);
+    height: calc(100vh - 140px);
     overflow-y: scroll;
     margin-top: 1px;
     flex-direction: row;
@@ -204,11 +204,15 @@
 
   /*Dark Mode*/
   body.dark-mode {
-    background-color: #333;
+    background-color: #222;
   }
-  .dark-mode .copyright,
   .dark-mode .emulator-item,
   .dark-mode .header {
+    background-color: #333;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  .dark-mode .copyright {
     background-color: #222;
   }
   .dark-mode .emulator-title,
